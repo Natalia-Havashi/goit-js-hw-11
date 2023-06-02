@@ -1,24 +1,18 @@
 import { Notify } from "notiflix";
 import axios from "axios";
-// import SimpleLightbox from 'simplelightbox';
-// import 'simplelightbox/dist/simple-lightbox.min.css';
-// import throttle from 'lodash.throttle';
+
 
 const BASE_URL = 'https://pixabay.com/api/';
 const API_KEY = '36947214-e67710a045a4cff9982bc6142';
-
-
 
 const refs ={
   form: document.querySelector('.search-form'),
   gallery: document.querySelector('.gallery'),
   btnLoadMore: document.querySelector('.load-more')
-}
+};
 
 let page = 1;
 let value = '';
-
-
 
 refs.form.addEventListener('submit', handlerSearchForm);
 refs.btnLoadMore.addEventListener('click', handlerLoadMore);
@@ -43,6 +37,7 @@ async function handlerSearchForm(event) {
  page = 1;
  gallery()
  value = formatted;
+ 
 
  const result = await getUrl(formatted, page);
  if(result.length === 0){
@@ -53,6 +48,7 @@ async function handlerSearchForm(event) {
  endOfSearch(result);
 
  refs.form.reset();
+ 
 }
 
 
@@ -102,4 +98,5 @@ function endOfSearch(result){
       refs.btnLoadMore.classList.add('is-hidden');
   }
 }
+
 
