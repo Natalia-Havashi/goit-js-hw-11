@@ -98,5 +98,3 @@ function endOfSearch(result){
       refs.btnLoadMore.classList.add('is-hidden');
   }
 }
-
-
