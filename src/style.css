@@ -1,0 +1,79 @@
+body {
+    background-color: #F9F7F4;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(./images/pexels-efdal-yildiz-917494.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-attachment:fixed;
+    /* padding-top: 200px;
+    padding-bottom: 200px;   */
+}
+
+.search-form {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #666666;
+    margin-top: 12px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.photo-card {
+    display: flex;
+    width: 422px;
+    border: 1px solid rgba(128, 128, 128, 0.747);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgba(69, 69, 67, 0.27);
+    box-shadow: 0px 4px 9px 1px rgba(59, 2, 53, 0.2);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 300px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info-item {
+    margin: 10px;
+}
+
+button {
+    width: 100px;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.load-more {
+    border-radius: 10px;
+}
+
+.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+}
